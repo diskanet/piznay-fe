@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		CC0D75232B04AC0400906232 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0D75222B04AC0400906232 /* AppDelegate.swift */; };
 		CC0D75252B04AC0500906232 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0D75242B04AC0500906232 /* SceneDelegate.swift */; };
-		CC0D75272B04AC0500906232 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0D75262B04AC0500906232 /* ViewController.swift */; };
-		CC0D752A2B04AC0500906232 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC0D75282B04AC0500906232 /* Main.storyboard */; };
 		CC0D752C2B04AC0600906232 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC0D752B2B04AC0600906232 /* Assets.xcassets */; };
 		CC0D752F2B04AC0600906232 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC0D752D2B04AC0600906232 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +17,6 @@
 		CC0D751F2B04AC0400906232 /* Piznay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Piznay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0D75222B04AC0400906232 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC0D75242B04AC0500906232 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CC0D75262B04AC0500906232 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CC0D75292B04AC0500906232 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC0D752B2B04AC0600906232 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC0D752E2B04AC0600906232 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC0D75302B04AC0600906232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +52,109 @@
 		CC0D75212B04AC0400906232 /* Piznay */ = {
 			isa = PBXGroup;
 			children = (
-				CC0D75222B04AC0400906232 /* AppDelegate.swift */,
-				CC0D75242B04AC0500906232 /* SceneDelegate.swift */,
-				CC0D75262B04AC0500906232 /* ViewController.swift */,
-				CC0D75282B04AC0500906232 /* Main.storyboard */,
-				CC0D752B2B04AC0600906232 /* Assets.xcassets */,
-				CC0D752D2B04AC0600906232 /* LaunchScreen.storyboard */,
+				CC0D75362B04ADAA00906232 /* Application */,
+				CC0D75372B04ADB600906232 /* Model */,
+				CC0D75382B04ADC800906232 /* ViewControllers */,
+				CC0D753A2B04AE0B00906232 /* ViewModel */,
+				CC0D75392B04ADF700906232 /* Views */,
+				CC0D753B2B04AE2100906232 /* Recources */,
 				CC0D75302B04AC0600906232 /* Info.plist */,
 			);
 			path = Piznay;
+			sourceTree = "<group>";
+		};
+		CC0D75362B04ADAA00906232 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CC0D75222B04AC0400906232 /* AppDelegate.swift */,
+				CC0D75242B04AC0500906232 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CC0D75372B04ADB600906232 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC0D753C2B04AE9B00906232 /* Enum */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC0D75382B04ADC800906232 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CC0D75392B04ADF700906232 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC0D75412B04AF3500906232 /* Custom */,
+				CC0D75402B04AF2500906232 /* Interface */,
+				CC0D753F2B04AF1E00906232 /* Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CC0D753A2B04AE0B00906232 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CC0D753B2B04AE2100906232 /* Recources */ = {
+			isa = PBXGroup;
+			children = (
+				CC0D753E2B04AEF400906232 /* DesignSystem */,
+				CC0D753D2B04AEE600906232 /* Extensions */,
+				CC0D752D2B04AC0600906232 /* LaunchScreen.storyboard */,
+				CC0D752B2B04AC0600906232 /* Assets.xcassets */,
+			);
+			path = Recources;
+			sourceTree = "<group>";
+		};
+		CC0D753C2B04AE9B00906232 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		CC0D753D2B04AEE600906232 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CC0D753E2B04AEF400906232 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		CC0D753F2B04AF1E00906232 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		CC0D75402B04AF2500906232 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		CC0D75412B04AF3500906232 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +217,6 @@
 			files = (
 				CC0D752F2B04AC0600906232 /* LaunchScreen.storyboard in Resources */,
 				CC0D752C2B04AC0600906232 /* Assets.xcassets in Resources */,
-				CC0D752A2B04AC0500906232 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +227,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC0D75272B04AC0500906232 /* ViewController.swift in Sources */,
 				CC0D75232B04AC0400906232 /* AppDelegate.swift in Sources */,
 				CC0D75252B04AC0500906232 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +235,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CC0D75282B04AC0500906232 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CC0D75292B04AC0500906232 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CC0D752D2B04AC0600906232 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -290,11 +370,13 @@
 				DEVELOPMENT_TEAM = U6JM6F58R2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Piznay/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Piznay;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +384,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NEEMMELLA.Piznay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -318,11 +403,13 @@
 				DEVELOPMENT_TEAM = U6JM6F58R2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Piznay/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Piznay;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +417,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NEEMMELLA.Piznay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
