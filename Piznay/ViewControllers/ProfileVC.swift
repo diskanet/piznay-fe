@@ -11,7 +11,7 @@ class ProfileVC: BasicVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = Colors.Orange._100
     }
 }
 

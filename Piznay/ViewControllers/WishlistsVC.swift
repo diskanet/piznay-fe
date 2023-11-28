@@ -11,7 +11,11 @@ class WishlistsVC: BasicVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = Colors.Yellow._100
+    }
+    override func setupNavBar() {
+        super.setupNavBar()
+        self.navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
 

@@ -10,58 +10,50 @@ import RealmSwift
 
 class Place: Object {
     @Persisted(primaryKey: true) var id: ObjectId
-    @Persisted var coverURL: LinkingObjects<Place>
-    @Persisted var distance: Int
+    @Persisted var coverURL: String?
+    @Persisted var distance: Int64? = 0
     @Persisted var title: String
     @Persisted var location: String
     @Persisted var country: String
-    @Persisted var details: Map<String, String>
-    @Persisted var coordinates: Coordinates
+    @Persisted var latitude: Double
+    @Persisted var longitude: Double
     @Persisted var originType: OriginType
     @Persisted var objectType: ObjectType
-    @Persisted var rating: Double
+    @Persisted var rating: Double = 0.0
     @Persisted var reviews: List<Review>
-    @Persisted var reviewsCount: Int
-    @Persisted var isVisited: Bool
+    @Persisted var reviewsCount: Int64 = 0
+    @Persisted var isVisited: Bool = false
     @Persisted var placesNearby: List<Place>
     @Persisted var phone: String?
     @Persisted var website: String?
     @Persisted var address: String
     
+    var coordinates: String {
+        return "\(latitude), \(longitude)"
+    }
+    
     convenience init(
-        coverURL: LinkingObjects<Place>,
-        distance: Int,
+        coverURL: String?,
         title: String,
         location: String,
         country: String,
-        details: Map<String, String>,
-        coordinates: Coordinates,
+        latitude: Double,
+        longitude: Double,
         originType: OriginType,
         objectType: ObjectType,
-        rating: Double,
-        reviews: List<Review>,
-        reviewsCount: Int,
-        isVisited: Bool = false,
-        placesNearby: List<Place>,
         phone: String?,
         website: String?,
         address: String
     ) {
         self.init()
         self.coverURL = coverURL
-        self.distance = distance
         self.title = title
         self.location = location
         self.country = country
-        self.details = details
-        self.coordinates = coordinates
+        self.latitude = latitude
+        self.longitude = longitude
         self.originType = originType
         self.objectType = objectType
-        self.rating = rating
-        self.reviews = reviews
-        self.reviewsCount = reviewsCount
-        self.isVisited = isVisited
-        self.placesNearby = placesNearby
         self.phone = phone
         self.website = website
         self.address = address

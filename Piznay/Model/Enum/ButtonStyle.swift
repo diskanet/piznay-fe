@@ -25,13 +25,13 @@ enum ButtonStyle {
         }
     }
     
-    var highlightedColor: UIColor {
+    var highlightedBackgroundColor: UIColor {
         switch self {
         case .filled:
             return Colors.Primary._700
-        case .outlined:
+        case .outlined, .plain:
             return UIColor.clear
-        case .plain, .tinted:
+        case .tinted:
             return Colors.Primary._200
         }
     }
@@ -69,8 +69,55 @@ enum ButtonStyle {
         return Colors.Neutral._750
     }
     
+    var highlightedTextColor: UIColor {
+        switch self {
+        case .filled:
+            return Colors.Base.white
+        case .outlined, .plain, .tinted:
+            return Colors.Primary._700
+        }
+    }
+    
     var hasBorder: Bool {
         self == .outlined
     }
+}
+
+enum ButtonSize {
+    case large
+    case medium
+    case small
+    
+    var height: CGFloat {
+        switch self {
+        case .large:
+            return Sizes.s44
+        case .medium:
+            return Sizes.s40
+        case .small:
+            return Sizes.s32
+        }
+    }
+}
+
+enum ButtonShape {
+    case large
+    case medium
+    case small
+    case rounding
+    case sharp
+    
+    var corners: CGFloat {
+            switch self {
+            case .large, .medium:
+                return Sizes.s12
+            case .small:
+                return Sizes.s8
+            case .rounding:
+                return Sizes.s56
+            case .sharp:
+                return 0
+            }
+        }
 }
 

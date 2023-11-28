@@ -7,19 +7,19 @@
 
 import UIKit
 import RealmSwift
+import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        FirebaseApp.configure()
+        
         do {
-            let _ = try Realm()
+            let _ = try Realm(configuration: RealmService.getRealmConfiguration())
         } catch {
-            fatalError("Failed to initialize Realm: \(error.localizedDescription)")
+            fatalError("Failed to initialize Realm. Error: \(error.localizedDescription)")
         }
         
         return true

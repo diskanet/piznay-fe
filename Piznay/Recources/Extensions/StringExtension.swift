@@ -5,7 +5,7 @@
 //  Created by Dima Kahanets on 15.11.2023.
 //
 
-import Foundation
+import UIKit
 
 extension String {
     func isValidEmail() -> Bool {

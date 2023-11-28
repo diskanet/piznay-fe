@@ -13,7 +13,8 @@ class BasicVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupView()
+        setupVC()
+        setupNavBar()
     }
     
     func setupNavBar() {
@@ -26,10 +27,7 @@ class BasicVC: UIViewController {
         navigationItem.standardAppearance = appearance
     }
     
-    private func setupView() {
-        
-        setupNavBar()
-        
+    private func setupVC() {
         self.view.backgroundColor = Colors.Base.white
     }
 }

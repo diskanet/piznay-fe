@@ -8,19 +8,19 @@
 import Foundation
 import RealmSwift
 
-enum ObjectType: String, PersistableEnum {
-        case bay
-        case coralReef
-        case canyon
-        case cliff
-        case cave
-        case mountain
-        case river
-        case waterfall
-        case lake
+enum ObjectType: String, CaseIterable, PersistableEnum {
+        case bay = "Bay"
+        case coralReef = "Coral reef"
+        case canyon = "Canyon"
+        case cliff = "Cliff"
+        case cave = "Cave"
+        case mountain = "Mountain"
+        case river = "River"
+        case waterfall = "Waterfall"
+        case lake = "Lake"
 
-        case castle
-        case palace
-        case fortress
-        case citadel
+        case castle = "Castle"
+        case palace = "Palace"
+        case fortress = "Fortress"
+        case citadel = "Citadel"
 }

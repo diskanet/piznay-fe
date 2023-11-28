@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 
-enum OriginType: String, PersistableEnum {
+enum OriginType: String, CaseIterable, PersistableEnum {
     case natural = "Natural"
     case artificial = "Artificial"
 }

@@ -53,7 +53,7 @@ extension TabBarVC {
         
         configureTabBarItem(for: homeNavController, navTitle: "Home", tabTitle: nil, image: homeIconDefault, selectedImage: homeIconActive)
         configureTabBarItem(for: exploreNavController, navTitle: "Explore", tabTitle: nil, image: exploreIconDefault, selectedImage: exploreIconActive)
-        configureTabBarItem(for: wishlistsNavController, navTitle: "Favorites", tabTitle: nil, image: wishlistsIconDefault, selectedImage: wishlistsIconActive)
+        configureTabBarItem(for: wishlistsNavController, navTitle: "Wishlists", tabTitle: nil, image: wishlistsIconDefault, selectedImage: wishlistsIconActive)
         configureTabBarItem(for: profileNavController, navTitle: "Profile", tabTitle: nil, image: profileIconDefault, selectedImage: profileIconActive)
         
         // MARK: Adding a UINavigationController to the TabBarController
