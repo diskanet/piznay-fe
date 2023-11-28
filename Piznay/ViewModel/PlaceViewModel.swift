@@ -8,16 +8,13 @@
 import Foundation
 import FirebaseDatabase
 import FirebaseStorage
-import RxSwift
-import RxCocoa
 
 class PlaceViewModel {
-    // MARK: Properties
     
+    // MARK: Properties
     static let databaseRef = Database.database(url: "https://piznay-9c1e3-default-rtdb.europe-west1.firebasedatabase.app").reference()
     static let databasePath = "places"
     static let storageRef = Storage.storage(url: "gs://piznay-9c1e3.appspot.com").reference()
-    
     
     
     func saveImageData(imageData: Data, completion: @escaping (Result<String, Error>) -> Void) {
@@ -50,8 +47,6 @@ class PlaceViewModel {
                 
                 json["id"] = id
                 json["createdAt"] = createdAt
-//                json["reviews"] = []
-//                json["placesNearby"] = []
                 
                 newPlace.setValue(json)
             }
@@ -72,7 +67,6 @@ class PlaceViewModel {
           
             var places = [PlaceFirebase]()
             for placeSnapshot in placesSnapshot {
-                print(placeSnapshot.value)
                 if let placeDict = placeSnapshot.value as? [String: Any] {
                     do {
                         let jsonData = try JSONSerialization.data(withJSONObject: placeDict)
@@ -90,49 +84,10 @@ class PlaceViewModel {
         }
     }
     
-//    func createPlace(place: PlaceFirebase) {
-//        let newPlace = FirebaseService.databaseRef.child("places").childByAutoId()
-//        let timestamp = ServerValue.timestamp()
-//        
-//        newPlace.setValue([
-//            "imageURL": place.imageURL,
-//            "imageRatio": place.imageRatio,
-//            "title": place.title,
-//            "location": place.locality,
-//            "country": place.country,
-//            "details": [
-//                "coordinates": [
-//                    "latitude": place.latitude,
-//                    "longitude": place.longitude
-//                ]
-//            ],
-//            "origin": place.originType,
-//            "object": place.objectType,
-//            "rating": place.rating,
-//            "reviews": place.reviews,
-//            "reviewsCount": place.reviewsCount,
-//            "isVisited": place.isVisited,
-//            "placesNearby": place.placesNearby,
-//            "contacts": [
-//                "phone": place.phone,
-//                "website": place.website,
-//                "address": place.address,
-//            ],
-//            "creationDate": timestamp
-//        ])
-//    }
-//   
-    
-    static func addPlace(place: Place) {
-        RealmService.write(object: place)
-    }
-    
-    
     static func saveReview(_ review: ReviewFirebase) {
            do {
                let jsonData = try JSONEncoder().encode(review)
                guard let json = try JSONSerialization.jsonObject(with: jsonData, options: []) as? [String: Any] else { return }
-               // Збереження об'єкта review в базі даних
                let newReviewRef = databaseRef.child("reviews").childByAutoId()
                newReviewRef.setValue(json)
            } catch {
@@ -144,7 +99,6 @@ class PlaceViewModel {
            do {
                let jsonData = try JSONEncoder().encode(place)
                guard let json = try JSONSerialization.jsonObject(with: jsonData, options: []) as? [String: Any] else { return }
-               // Збереження об'єкта place в базі даних
                let newPlaceRef = databaseRef.child("places").childByAutoId()
                newPlaceRef.setValue(json)
            } catch {

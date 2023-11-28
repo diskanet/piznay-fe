@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC086A4D2B15685E0032E562 /* ImageStretchyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC086A4C2B15685E0032E562 /* ImageStretchyHeader.swift */; };
+		CC086A512B15FEBF0032E562 /* BasicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC086A502B15FEBF0032E562 /* BasicButton.swift */; };
+		CC086A532B15FEF80032E562 /* ScaleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC086A522B15FEF80032E562 /* ScaleButton.swift */; };
+		CC086A552B15FF130032E562 /* LeftNavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC086A542B15FF130032E562 /* LeftNavButton.swift */; };
+		CC086A572B15FF440032E562 /* HorizontalSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC086A562B15FF440032E562 /* HorizontalSeparator.swift */; };
+		CC086A592B15FF7E0032E562 /* PlaceCardHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC086A582B15FF7E0032E562 /* PlaceCardHeader.swift */; };
+		CC086A5B2B16001A0032E562 /* GeoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC086A5A2B16001A0032E562 /* GeoCardView.swift */; };
 		CC0D75232B04AC0400906232 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0D75222B04AC0400906232 /* AppDelegate.swift */; };
 		CC0D75252B04AC0500906232 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0D75242B04AC0500906232 /* SceneDelegate.swift */; };
 		CC0D752C2B04AC0600906232 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC0D752B2B04AC0600906232 /* Assets.xcassets */; };
@@ -54,37 +59,37 @@
 		CC0D759A2B05277300906232 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CC0D75992B05277300906232 /* FirebaseDatabaseSwift */; };
 		CC0D759C2B05277400906232 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = CC0D759B2B05277400906232 /* FirebaseDynamicLinks */; };
 		CC0D759E2B05277400906232 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CC0D759D2B05277400906232 /* FirebaseStorage */; };
-		CC0D75A12B053C3C00906232 /* LeftNavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0D75A02B053C3C00906232 /* LeftNavButton.swift */; };
 		CC0D75A32B053ED800906232 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0D75A22B053ED700906232 /* UIViewExtensions.swift */; };
-		CC0D75A52B0540C800906232 /* BasicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0D75A42B0540C700906232 /* BasicButton.swift */; };
-		CC0D75A82B062CA400906232 /* SingleActionBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0D75A72B062CA400906232 /* SingleActionBarView.swift */; };
-		CC0D75AB2B06302C00906232 /* HorizontalSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0D75AA2B06302C00906232 /* HorizontalSeparator.swift */; };
 		CC0D75AD2B0645BB00906232 /* CreatePlaceDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0D75AC2B0645BB00906232 /* CreatePlaceDetailsVC.swift */; };
 		CC0D75B02B07EBFE00906232 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0D75AF2B07EBFE00906232 /* RealmService.swift */; };
-		CC0D75B32B07F15F00906232 /* GeoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0D75B22B07F15F00906232 /* GeoCardView.swift */; };
-		CC0D75B62B07FC7500906232 /* ScaleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0D75B52B07FC7500906232 /* ScaleButton.swift */; };
 		CC81E7232B0A18E1005DA935 /* CreatePlaceCoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81E7222B0A18E1005DA935 /* CreatePlaceCoverVC.swift */; };
-		CC81E7252B0A2694005DA935 /* AspectRatioTabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81E7242B0A2694005DA935 /* AspectRatioTabsView.swift */; };
 		CC81E7272B0A3A96005DA935 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81E7262B0A3A96005DA935 /* UIButtonExtension.swift */; };
 		CC81E72B2B0B91EE005DA935 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81E72A2B0B91EE005DA935 /* Observable.swift */; };
 		CC81E72D2B0BBF69005DA935 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81E72C2B0BBF68005DA935 /* UIViewControllerExtension.swift */; };
 		CC81E72F2B0CF557005DA935 /* BasicBottomSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81E72E2B0CF557005DA935 /* BasicBottomSheetVC.swift */; };
 		CC81E7312B0CFC5C005DA935 /* OriginBottomSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81E7302B0CFC5C005DA935 /* OriginBottomSheetVC.swift */; };
-		CC81E7332B0D0B62005DA935 /* RowDefaultTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81E7322B0D0B62005DA935 /* RowDefaultTVC.swift */; };
 		CC81E7372B0DFF02005DA935 /* MKMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81E7362B0DFF02005DA935 /* MKMapViewExtension.swift */; };
 		CC81E7392B0E3605005DA935 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81E7382B0E3605005DA935 /* FirebaseService.swift */; };
-		CC81E73D2B0F5233005DA935 /* PlaceCardTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81E73C2B0F5233005DA935 /* PlaceCardTVC.swift */; };
 		CC81E73F2B0F536C005DA935 /* PlaceCardTVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81E73E2B0F536C005DA935 /* PlaceCardTVCViewModel.swift */; };
-		CC81E7412B0F551F005DA935 /* PlaceCardHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81E7402B0F551F005DA935 /* PlaceCardHeader.swift */; };
 		CC81E7442B0F566D005DA935 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = CC81E7432B0F566D005DA935 /* SDWebImage */; };
 		CC81E7462B0F701B005DA935 /* PlaceFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81E7452B0F701B005DA935 /* PlaceFirebase.swift */; };
+		CCABA2622B160081003A67FB /* PlaceCardTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCABA2612B160081003A67FB /* PlaceCardTVC.swift */; };
+		CCABA2642B16009C003A67FB /* RowDefaultTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCABA2632B16009C003A67FB /* RowDefaultTVC.swift */; };
+		CCABA2662B1600BE003A67FB /* SingleActionBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCABA2652B1600BE003A67FB /* SingleActionBarView.swift */; };
+		CCABA2682B1600E6003A67FB /* ImageStretchyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCABA2672B1600E6003A67FB /* ImageStretchyHeader.swift */; };
+		CCABA26A2B160100003A67FB /* AspectRatioTabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCABA2692B160100003A67FB /* AspectRatioTabsView.swift */; };
 		CCCEAC1E2B10CED100C20588 /* ReviewFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEAC1D2B10CED100C20588 /* ReviewFirebase.swift */; };
 		CCCEAC202B10CF4000C20588 /* UserFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEAC1F2B10CF4000C20588 /* UserFirebase.swift */; };
 		CCCEAC222B11477B00C20588 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEAC212B11477B00C20588 /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CC086A4C2B15685E0032E562 /* ImageStretchyHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStretchyHeader.swift; sourceTree = "<group>"; };
+		CC086A502B15FEBF0032E562 /* BasicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicButton.swift; sourceTree = "<group>"; };
+		CC086A522B15FEF80032E562 /* ScaleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleButton.swift; sourceTree = "<group>"; };
+		CC086A542B15FF130032E562 /* LeftNavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftNavButton.swift; sourceTree = "<group>"; };
+		CC086A562B15FF440032E562 /* HorizontalSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HorizontalSeparator.swift; path = Piznay/HorizontalSeparator.swift; sourceTree = SOURCE_ROOT; };
+		CC086A582B15FF7E0032E562 /* PlaceCardHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCardHeader.swift; sourceTree = "<group>"; };
+		CC086A5A2B16001A0032E562 /* GeoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCardView.swift; sourceTree = "<group>"; };
 		CC0D751F2B04AC0400906232 /* Piznay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Piznay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0D75222B04AC0400906232 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC0D75242B04AC0500906232 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,30 +125,25 @@
 		CC0D75762B04B75300906232 /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
 		CC0D758C2B04EE6100906232 /* CreatePlaceGeoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlaceGeoVC.swift; sourceTree = "<group>"; };
 		CC0D758E2B05240100906232 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		CC0D75A02B053C3C00906232 /* LeftNavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftNavButton.swift; sourceTree = "<group>"; };
 		CC0D75A22B053ED700906232 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
-		CC0D75A42B0540C700906232 /* BasicButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicButton.swift; sourceTree = "<group>"; };
 		CC0D75A62B060A3800906232 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		CC0D75A72B062CA400906232 /* SingleActionBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleActionBarView.swift; sourceTree = "<group>"; };
-		CC0D75AA2B06302C00906232 /* HorizontalSeparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalSeparator.swift; sourceTree = "<group>"; };
 		CC0D75AC2B0645BB00906232 /* CreatePlaceDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlaceDetailsVC.swift; sourceTree = "<group>"; };
 		CC0D75AF2B07EBFE00906232 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
-		CC0D75B22B07F15F00906232 /* GeoCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoCardView.swift; sourceTree = "<group>"; };
-		CC0D75B52B07FC7500906232 /* ScaleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleButton.swift; sourceTree = "<group>"; };
 		CC81E7222B0A18E1005DA935 /* CreatePlaceCoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlaceCoverVC.swift; sourceTree = "<group>"; };
-		CC81E7242B0A2694005DA935 /* AspectRatioTabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectRatioTabsView.swift; sourceTree = "<group>"; };
 		CC81E7262B0A3A96005DA935 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		CC81E72A2B0B91EE005DA935 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		CC81E72C2B0BBF68005DA935 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		CC81E72E2B0CF557005DA935 /* BasicBottomSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBottomSheetVC.swift; sourceTree = "<group>"; };
 		CC81E7302B0CFC5C005DA935 /* OriginBottomSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginBottomSheetVC.swift; sourceTree = "<group>"; };
-		CC81E7322B0D0B62005DA935 /* RowDefaultTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowDefaultTVC.swift; sourceTree = "<group>"; };
 		CC81E7362B0DFF02005DA935 /* MKMapViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewExtension.swift; sourceTree = "<group>"; };
 		CC81E7382B0E3605005DA935 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
-		CC81E73C2B0F5233005DA935 /* PlaceCardTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceCardTVC.swift; sourceTree = "<group>"; };
 		CC81E73E2B0F536C005DA935 /* PlaceCardTVCViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceCardTVCViewModel.swift; sourceTree = "<group>"; };
-		CC81E7402B0F551F005DA935 /* PlaceCardHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceCardHeader.swift; sourceTree = "<group>"; };
 		CC81E7452B0F701B005DA935 /* PlaceFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceFirebase.swift; sourceTree = "<group>"; };
+		CCABA2612B160081003A67FB /* PlaceCardTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCardTVC.swift; sourceTree = "<group>"; };
+		CCABA2632B16009C003A67FB /* RowDefaultTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowDefaultTVC.swift; sourceTree = "<group>"; };
+		CCABA2652B1600BE003A67FB /* SingleActionBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleActionBarView.swift; sourceTree = "<group>"; };
+		CCABA2672B1600E6003A67FB /* ImageStretchyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStretchyHeader.swift; sourceTree = "<group>"; };
+		CCABA2692B160100003A67FB /* AspectRatioTabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectRatioTabsView.swift; sourceTree = "<group>"; };
 		CCCEAC1D2B10CED100C20588 /* ReviewFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFirebase.swift; sourceTree = "<group>"; };
 		CCCEAC1F2B10CF4000C20588 /* UserFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFirebase.swift; sourceTree = "<group>"; };
 		CCCEAC212B11477B00C20588 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
@@ -248,9 +248,17 @@
 		CC0D75392B04ADF700906232 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CC0D75412B04AF3500906232 /* Custom */,
-				CC0D75402B04AF2500906232 /* Interface */,
-				CC0D753F2B04AF1E00906232 /* Cells */,
+				CCABA2652B1600BE003A67FB /* SingleActionBarView.swift */,
+				CCABA2672B1600E6003A67FB /* ImageStretchyHeader.swift */,
+				CCABA2692B160100003A67FB /* AspectRatioTabsView.swift */,
+				CC086A562B15FF440032E562 /* HorizontalSeparator.swift */,
+				CC086A502B15FEBF0032E562 /* BasicButton.swift */,
+				CC086A522B15FEF80032E562 /* ScaleButton.swift */,
+				CC086A542B15FF130032E562 /* LeftNavButton.swift */,
+				CCABA2612B160081003A67FB /* PlaceCardTVC.swift */,
+				CCABA2632B16009C003A67FB /* RowDefaultTVC.swift */,
+				CC086A582B15FF7E0032E562 /* PlaceCardHeader.swift */,
+				CC086A5A2B16001A0032E562 /* GeoCardView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -258,7 +266,7 @@
 		CC0D753A2B04AE0B00906232 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				CC0D75AE2B07EBEB00906232 /* Service */,
+				CC0D75AE2B07EBEB00906232 /* Services */,
 				CC0D75762B04B75300906232 /* PlaceViewModel.swift */,
 				CC81E73E2B0F536C005DA935 /* PlaceCardTVCViewModel.swift */,
 			);
@@ -320,69 +328,13 @@
 			path = DesignSystem;
 			sourceTree = "<group>";
 		};
-		CC0D753F2B04AF1E00906232 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				CC81E73C2B0F5233005DA935 /* PlaceCardTVC.swift */,
-				CC81E7322B0D0B62005DA935 /* RowDefaultTVC.swift */,
-			);
-			name = Cells;
-			sourceTree = "<group>";
-		};
-		CC0D75402B04AF2500906232 /* Interface */ = {
-			isa = PBXGroup;
-			children = (
-				CC0D759F2B053C1B00906232 /* Buttons */,
-			);
-			name = Interface;
-			sourceTree = "<group>";
-		};
-		CC0D75412B04AF3500906232 /* Custom */ = {
-			isa = PBXGroup;
-			children = (
-				CC0D75B12B07F15000906232 /* Cards */,
-				CC0D75A92B06302C00906232 /* Separators */,
-				CC0D75A72B062CA400906232 /* SingleActionBarView.swift */,
-				CC81E7242B0A2694005DA935 /* AspectRatioTabsView.swift */,
-				CC086A4C2B15685E0032E562 /* ImageStretchyHeader.swift */,
-			);
-			name = Custom;
-			sourceTree = "<group>";
-		};
-		CC0D759F2B053C1B00906232 /* Buttons */ = {
-			isa = PBXGroup;
-			children = (
-				CC0D75A42B0540C700906232 /* BasicButton.swift */,
-				CC0D75A02B053C3C00906232 /* LeftNavButton.swift */,
-				CC0D75B52B07FC7500906232 /* ScaleButton.swift */,
-			);
-			name = Buttons;
-			sourceTree = "<group>";
-		};
-		CC0D75A92B06302C00906232 /* Separators */ = {
-			isa = PBXGroup;
-			children = (
-				CC0D75AA2B06302C00906232 /* HorizontalSeparator.swift */,
-			);
-			path = Separators;
-			sourceTree = "<group>";
-		};
-		CC0D75AE2B07EBEB00906232 /* Service */ = {
+		CC0D75AE2B07EBEB00906232 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				CC0D75AF2B07EBFE00906232 /* RealmService.swift */,
 				CC81E7382B0E3605005DA935 /* FirebaseService.swift */,
 			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		CC0D75B12B07F15000906232 /* Cards */ = {
-			isa = PBXGroup;
-			children = (
-				CC81E7402B0F551F005DA935 /* PlaceCardHeader.swift */,
-				CC0D75B22B07F15F00906232 /* GeoCardView.swift */,
-			);
-			path = Cards;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		CC81E7472B0F761D005DA935 /* BottomSheetVC */ = {
@@ -491,36 +443,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC086A592B15FF7E0032E562 /* PlaceCardHeader.swift in Sources */,
+				CCABA2622B160081003A67FB /* PlaceCardTVC.swift in Sources */,
 				CC0D758D2B04EE6100906232 /* CreatePlaceGeoVC.swift in Sources */,
 				CC0D75612B04B27600906232 /* UIColorExtension.swift in Sources */,
-				CC086A4D2B15685E0032E562 /* ImageStretchyHeader.swift in Sources */,
+				CC086A5B2B16001A0032E562 /* GeoCardView.swift in Sources */,
 				CC0D75492B04B22A00906232 /* TravelerStatus.swift in Sources */,
 				CC0D75522B04B25400906232 /* Colors.swift in Sources */,
 				CC0D75632B04B27600906232 /* UILabelExtension.swift in Sources */,
+				CCABA26A2B160100003A67FB /* AspectRatioTabsView.swift in Sources */,
 				CC0D754D2B04B22A00906232 /* ButtonStyle.swift in Sources */,
-				CC81E7252B0A2694005DA935 /* AspectRatioTabsView.swift in Sources */,
 				CC0D75652B04B35D00906232 /* Review.swift in Sources */,
 				CC0D75432B04B18800906232 /* Place.swift in Sources */,
+				CC086A552B15FF130032E562 /* LeftNavButton.swift in Sources */,
 				CC0D756F2B04B46A00906232 /* ExploreVC.swift in Sources */,
 				CC81E72B2B0B91EE005DA935 /* Observable.swift in Sources */,
-				CC0D75AB2B06302C00906232 /* HorizontalSeparator.swift in Sources */,
 				CC0D75602B04B27600906232 /* StringExtension.swift in Sources */,
 				CC81E7312B0CFC5C005DA935 /* OriginBottomSheetVC.swift in Sources */,
-				CC0D75A52B0540C800906232 /* BasicButton.swift in Sources */,
 				CC0D75232B04AC0400906232 /* AppDelegate.swift in Sources */,
-				CC0D75A82B062CA400906232 /* SingleActionBarView.swift in Sources */,
 				CC0D756D2B04B45800906232 /* HomeVC.swift in Sources */,
 				CCCEAC1E2B10CED100C20588 /* ReviewFirebase.swift in Sources */,
-				CC0D75A12B053C3C00906232 /* LeftNavButton.swift in Sources */,
 				CC0D754C2B04B22A00906232 /* ObjectType.swift in Sources */,
 				CC0D75AD2B0645BB00906232 /* CreatePlaceDetailsVC.swift in Sources */,
 				CC0D755D2B04B27600906232 /* Reusable.swift in Sources */,
 				CC0D754B2B04B22A00906232 /* Coordinates.swift in Sources */,
+				CC086A532B15FEF80032E562 /* ScaleButton.swift in Sources */,
 				CC0D75252B04AC0500906232 /* SceneDelegate.swift in Sources */,
 				CC0D75512B04B25400906232 /* Typography.swift in Sources */,
 				CC81E7372B0DFF02005DA935 /* MKMapViewExtension.swift in Sources */,
 				CC0D755C2B04B27600906232 /* UITabBarControllerExtension.swift in Sources */,
 				CC0D755E2B04B27600906232 /* UIStackViewExtensions.swift in Sources */,
+				CCABA2682B1600E6003A67FB /* ImageStretchyHeader.swift in Sources */,
+				CCABA2642B16009C003A67FB /* RowDefaultTVC.swift in Sources */,
 				CC81E7232B0A18E1005DA935 /* CreatePlaceCoverVC.swift in Sources */,
 				CC81E7272B0A3A96005DA935 /* UIButtonExtension.swift in Sources */,
 				CC81E72D2B0BBF69005DA935 /* UIViewControllerExtension.swift in Sources */,
@@ -531,19 +485,17 @@
 				CC81E73F2B0F536C005DA935 /* PlaceCardTVCViewModel.swift in Sources */,
 				CC81E7392B0E3605005DA935 /* FirebaseService.swift in Sources */,
 				CC0D75732B04B53900906232 /* ProfileVC.swift in Sources */,
-				CC81E73D2B0F5233005DA935 /* PlaceCardTVC.swift in Sources */,
+				CC086A572B15FF440032E562 /* HorizontalSeparator.swift in Sources */,
 				CC0D75532B04B25400906232 /* Sizes.swift in Sources */,
 				CC0D754A2B04B22A00906232 /* OriginType.swift in Sources */,
+				CC086A512B15FEBF0032E562 /* BasicButton.swift in Sources */,
 				CC0D75A32B053ED800906232 /* UIViewExtensions.swift in Sources */,
-				CC81E7412B0F551F005DA935 /* PlaceCardHeader.swift in Sources */,
 				CC0D75B02B07EBFE00906232 /* RealmService.swift in Sources */,
-				CC0D75B62B07FC7500906232 /* ScaleButton.swift in Sources */,
 				CC0D75772B04B75300906232 /* PlaceViewModel.swift in Sources */,
 				CCCEAC202B10CF4000C20588 /* UserFirebase.swift in Sources */,
 				CCCEAC222B11477B00C20588 /* UIImageExtension.swift in Sources */,
 				CC0D756B2B04B40200906232 /* TabBarVC.swift in Sources */,
-				CC0D75B32B07F15F00906232 /* GeoCardView.swift in Sources */,
-				CC81E7332B0D0B62005DA935 /* RowDefaultTVC.swift in Sources */,
+				CCABA2662B1600BE003A67FB /* SingleActionBarView.swift in Sources */,
 				CC81E72F2B0CF557005DA935 /* BasicBottomSheetVC.swift in Sources */,
 				CC0D75672B04B38700906232 /* User.swift in Sources */,
 				CC0D75692B04B3DD00906232 /* BasicVC.swift in Sources */,
